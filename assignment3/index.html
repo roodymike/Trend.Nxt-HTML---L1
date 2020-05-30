@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 3</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            svg { width: 50%; }
+            h1 {
+                color: #c51c1c;
+                font-size: 4vw;
+                margin-top: 0;
+            }
+
+            #sectionA, #sectionB {
+                margin: 0 auto;
+                text-align: center;
+            }
+            video {
+                display: block;
+                margin: 20px auto;
+                width: 100%;
+                max-width: 480px;
+            }
+            button {
+                background: #c51c1c;
+                color: #ffffff;
+                text-transform: uppercase;
+                font-weight: 700;
+                padding: 15px;
+                border-radius: 8px;
+                margin: 0 10px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="sectionA" class="logo">
+            <h1>Awesome Online Videos</h1>
+            <img src="online-video-best-practices-01.jpg">
+        </div>
+
+        <div id="sectionB" class="video">
+            <video id="video" width="480">
+                <source src="Wipro.mp4" type="video/mp4">
+            </video>
+            <button onclick="play()">Play</button>
+            <button onclick="pause()">Pause</button>
+        </div>
+    </body>
+
+    <script>
+        var video = document.getElementById('video');
+        function play() {
+            video.play();
+        }
+
+        function pause() {
+            video.pause();
+        }
+    </script>
+</html>
